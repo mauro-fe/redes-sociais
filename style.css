@@ -13,7 +13,7 @@
    width: 100vw;
    height: 100vh;
    background-color: #63d3ff;
-   color: hsl(231 70% 20%);
+
  }
 
  .maxWidth {
@@ -24,13 +24,9 @@
 
  .main_title {
    font-size: 6em;
-   transition: color 1s linear;
    display: inline-block;
    margin: .6em 0 0;
- }
-
- .main_title:hover {
-   color: #fff9;
+   color: #fff;
  }
 
  .main_list_socialMedia {
