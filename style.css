@@ -11,7 +11,7 @@
 
  body {
    width: 100vw;
-   height: 100vh;
+   min-height: 100vh;
    background-color: #63d3ff;
 
  }
@@ -67,7 +67,7 @@
    margin-bottom: 0;
  }
 
- @media screen and (max-width: 1124px) {
+ @media screen and (max-width: 70.25em) {
 
    .main_title {
      font-size: 4.2em;
@@ -86,7 +86,7 @@
      font-size: 3em;
    }
 
-   .main_list_socialMedia li:nth-child(6n) {
+   .main_socialMedia {
      margin-bottom: 10em;
    }
  }
