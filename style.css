@@ -1,102 +1,120 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&family=Roboto+Condensed:wght@100;300;500;700&display=swap');
 
- :root {
-   --font-primary: 'Roboto Condensed', sans-serif;
- }
+:root {
+  --font-primary: 'Roboto Condensed', sans-serif;
+  --background-body: #63d3ff;
+}
 
- html {
-   font-size: 62.5%;
-   font-family: var(--font-primary);
- }
+html {
+  font-size: 62.5%;
+  font-family: var(--font-primary);
+}
 
- body {
-   width: 100vw;
-   min-height: 100vh;
-   background-color: #63d3ff;
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, #17E0F0, #0FCEF9, #318EAD);
 
- }
+}
 
- .maxWidth {
-   max-width: 100em;
-   margin: 0 auto;
-   text-align: center;
- }
+.maxWidth {
+  max-width: 100em;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10em;
+}
 
- .main_title {
-   font-size: 6em;
-   display: inline-block;
-   margin: .6em 0 .8em;
-   color: #fff;
-   box-shadow: 0px 0px 10px 1px hsl(231 70% 40% / 80%);
-   filter: drop-shadow(5px 5px 5px hsl(231 70% 40% / 80%));
-   padding: .2em .5em;
-   border-radius: 15px;
- }
 
- .main_list_socialMedia {
-   list-style-type: none;
-   padding: 0;
- }
+.main img {
+  display: inline-block;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  margin: 5em 0 2em 0;
+}
 
- .main_list_socialMedia li {
-   margin: 3.6em 0;
- }
+.main_socialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
- .main_list_socialMedia a,
- .main_list_socialMedia p {
-   display: block;
-   padding: .5em 0;
-   text-decoration: none;
-   background-color: hsl(231 70% 40% / 80%);
-   border-radius: 50px;
-   font-size: 4rem;
-   letter-spacing: 5px;
-   font-weight: 400;
-   color: #fff;
-   filter: drop-shadow(0px 15px 5px #000);
-   transition: background-color .3s, filter .3s ease-in-out, transform .3s ease-in-out;
- }
+.main_socialMedia-title {
+  display: inline-block;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 1px #0B1995;
+  text-shadow: 3px 3px 5px #000;
+  padding: .4em .5em;
+  font-size: 4em;
+  color: #fff;
+}
 
- .main_list_socialMedia a:hover,
- .main_list_socialMedia p:hover {
-   background-color: hsl(220 80% 60% / 70%);
-   filter: drop-shadow(0px 8px 5px #000);
-   animation: mexer 1s ease-in-out infinite alternate;
- }
+.main_list_socialMedia {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
 
- .main_list_socialMedia {
-   padding-bottom: 0;
-   margin-bottom: 0;
- }
+.main_list_socialMedia li {
+  margin: 3.6em 0;
+}
 
- @media screen and (max-width: 70.25em) {
+.main_list_socialMedia a,
+.main_list_socialMedia p {
+  display: block;
+  padding: .7em 0;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #0B1995, #0047BB, #0B1995);
+  border-radius: 50px;
+  font-size: 3em;
+  letter-spacing: 5px;
+  font-weight: 400;
+  color: #fff;
+  filter: drop-shadow(0px 15px 5px #000);
+  transition: opacity .3s, filter .5s;
+}
 
-   .main_title {
-     font-size: 4.2em;
-   }
+.main_list_socialMedia a:hover,
+.main_list_socialMedia p:hover {
+  opacity: .8;
+  filter: drop-shadow(0px 8px 5px #000);
+  animation: mexer 1s ease-in-out infinite alternate;
+}
 
-   .main_list_socialMedia {
-     flex: 1 1 auto;
-     margin: 0 1em;
-     padding-bottom: 15em;
-   }
+.main_list_socialMedia {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
-   .main_list_socialMedia li {
-     margin: 4em 0 0;
-   }
+@media screen and (max-width: 70.25em) {
 
-   .main_list_socialMedia a,
-   .main_list_socialMedia p {
-     font-size: 3em;
-   }
- }
+  .main_title {
+    font-size: 4.2em;
+  }
 
- @keyframes mexer {
-   0% {
-     transform: translateY(0px);
-   }
+  .main_list_socialMedia {
+    flex: 1 1 auto;
+    margin: 0 1em;
+    padding-bottom: 15em;
+  }
 
-   100% {
-     transform: translateY(10px);
-   }
- }
+  .main_list_socialMedia li {
+    margin: 4em 0 0;
+  }
+
+  .main_list_socialMedia a,
+  .main_list_socialMedia p {
+    font-size: 3em;
+  }
+}
+
+@keyframes mexer {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
