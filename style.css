@@ -89,6 +89,10 @@ body {
   animation: mexer 1s ease-in-out infinite alternate;
 }
 
+.main_list_socialMedia p::selection {
+  background-color: #000;
+}
+
 .main_list_socialMedia {
   padding-bottom: 0;
   margin-bottom: 0;
