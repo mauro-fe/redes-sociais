@@ -13,7 +13,7 @@ html {
 body {
   width: 100vw;
   min-height: 100vh;
-  background-image: linear-gradient(to right bottom, #17E0F0, #0FCEF9, #318EAD);
+  background-image: linear-gradient(to right bottom, #0798F2, #07C7F2);
 
 }
 
@@ -72,13 +72,15 @@ body {
   font-weight: 400;
   color: #fff;
   filter: drop-shadow(0px 15px 5px #0B2C4D);
-  transition: opacity .3s, filter .5s;
+  text-shadow: 4px 4px 5px #000;
+  transition: opacity .3s, filter .5s, text-shadow .5s;
 }
 
 .main_list_socialMedia a:hover,
 .main_list_socialMedia p:hover {
   opacity: .8;
   filter: drop-shadow(0px 8px 5px #000);
+  text-shadow: 2px 2px 5px #000;
   animation: mexer 1s ease-in-out infinite alternate;
 }
 
