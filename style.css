@@ -61,8 +61,8 @@ body {
   margin: 3.6em 0;
 }
 
-.main_list_socialMedia span {
-  pointer-events: none;
+.main_list_socialMedia span::after {
+  content: " Discord: ";
 }
 
 .main_list_socialMedia a,
