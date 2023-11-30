@@ -5,6 +5,10 @@
   --background-body: #63d3ff;
 }
 
+:root:has() {
+  --mexer: bolean;
+}
+
 html {
   font-size: 62.5%;
   font-family: var(--font-primary);
@@ -23,27 +27,42 @@ body {
   padding-bottom: 10em;
 }
 
-.main img {
+.header {
+  background-color: #fff;
+  width: 100vw;
+  border-radius: 0 0 50px 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+}
+
+.header .foto-perfil {
   display: inline-block;
   width: 15em;
   height: 15em;
   border-radius: 50%;
-  margin-top: 8em;
   box-shadow: 0px 0px 10px 1px #000;
   z-index: 1;
+  position: absolute;
+  transform: translateX(-120px);
+  transition: transform 1s;
 }
 
-.main img:active {
-  transform: scale(200%);
+.header .foto-perfil:active {
+  transform: scale(200%) translate(-90px, 40px);
+
 }
 
 .main_socialMedia-name {
   color: #000;
   font-size: 4em;
-  margin: .5em 0 1.5em 0;
-  border-bottom: 3px solid #b4e3e9;
+  margin-bottom: .5em;
   line-height: 1;
   filter: drop-shadow(2px 2px 1px #000);
+  border-bottom: 4px solid #224bbc;
+  margin-left: 4.5em;
 }
 
 .main_socialMedia {
@@ -62,6 +81,7 @@ body {
   padding: .4em .5em;
   color: #e7ffff;
   font-size: 2.3em;
+  margin-top: 1em;
 }
 
 .main_list_socialMedia {
