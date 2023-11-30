@@ -38,7 +38,7 @@ body {
   padding: 3em 0;
 }
 
-.header .foto-perfil {
+.header_foto-perfil {
   display: inline-block;
   width: 15em;
   height: 15em;
@@ -50,7 +50,7 @@ body {
   transition: transform 1s;
 }
 
-.header .foto-perfil:active {
+.header_foto-perfil:active {
   transform: scale(200%) translate(-90px, 40px);
 
 }
@@ -151,6 +151,28 @@ body {
 }
 
 @media screen and (max-width: 70.25em) {
+
+  .header {
+    background-color: transparent;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .header_foto-perfil {
+    position: static;
+    transform: translate(0);
+    transition: transform 1s, margin-top 1s;
+  }
+
+  .header_foto-perfil:active {
+    transform: scale(200%);
+    margin-top: 5em;
+
+  }
+
+  .main_socialMedia-name {
+    margin: .5em 0 0 0;
+  }
 
   .main_title {
     font-size: 4.2em;
