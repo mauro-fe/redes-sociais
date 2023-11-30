@@ -27,7 +27,7 @@ body {
   padding-bottom: 10em;
 }
 
-.header {
+.main_socialMedia_header {
   background-color: #fff;
   width: 100vw;
   border-radius: 0 0 50px 50px;
@@ -152,7 +152,7 @@ body {
 
 @media screen and (max-width: 70.25em) {
 
-  .header {
+  .main_socialMedia_header {
     background-color: transparent;
     flex-direction: column;
     margin: 0;
