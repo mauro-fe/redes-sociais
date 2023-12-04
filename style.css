@@ -34,10 +34,6 @@ body {
   justify-content: center;
 }
 
-.main_socialMedia-header {
-  margin-bottom: 2em
-}
-
 .header_foto-perfil-input {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -55,6 +51,7 @@ body {
   transition: transform 1s;
   margin-top: 8em;
   position: relative;
+  z-index: 1;
 }
 
 .header_foto-perfil-input:checked+label>.header_foto-perfil {
@@ -146,18 +143,8 @@ body {
 
 @media screen and (max-width: 70.25em) {
 
-  .main_socialMedia_header {
-    background-color: transparent;
-    flex-direction: column;
-    margin: 0;
-  }
-
   .header_foto-perfil {
     transition: transform 1s, margin-top 1s;
-  }
-
-  .main_socialMedia-name {
-    margin: .5em 0 0 0;
   }
 
   .main_title {
@@ -167,7 +154,6 @@ body {
   .main_list_socialMedia {
     flex: 1 1 auto;
     margin: 0 1em;
-
     max-width: 90%;
   }
 
