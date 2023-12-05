@@ -54,14 +54,14 @@ body {
   border-radius: 50%;
   box-shadow: 0px 0px 10px 1px #000;
   transition: transform 1s;
-  margin-top: 9.2em;
   position: relative;
   z-index: 1;
+  margin-top: 1em;
 }
 
 .header_foto-perfil-input:checked+label>.header_foto-perfil {
-  transform: scale(220%);
-  margin-top: 9.2em;
+  transform: translateY(120px) scale(250%);
+  margin-top: 1em;
 }
 
 .main_socialMedia-name {
@@ -70,7 +70,6 @@ body {
   line-height: 1;
   filter: drop-shadow(2px 2px 1px #000);
   border-bottom: 4px solid #224bbc;
-  margin: .5em 0 0 0;
 }
 
 .main_socialMedia-title::after {
@@ -128,6 +127,18 @@ body {
   background-color: #000;
 }
 
+.qrCodePix {
+  margin-top: 5em;
+  width: 30em;
+  height: 30em;
+}
+
+.chavePix {
+  font-size: 2em;
+  margin-top: .3em;
+  text-transform: uppercase;
+}
+
 .footer {
   background-color: #0B1995;
   color: #fff;
@@ -155,7 +166,7 @@ body {
   }
 
   .main_socialMedia-name {
-    margin: 1em 0 0 0;
+    margin: .5em 0 .8em 0;
   }
 
   .main_list_socialMedia {
@@ -167,6 +178,18 @@ body {
   .main_list_socialMedia a,
   .main_list_socialMedia p {
     font-size: 2.5em;
+  }
+
+  .qrCodePix {
+    margin-top: 4em;
+    width: 20em;
+    height: 20em;
+  }
+
+  .chavePix {
+    font-size: 1.5em;
+    margin-top: .4em;
+    text-transform: uppercase;
   }
 }
 
