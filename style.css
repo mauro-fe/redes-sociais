@@ -168,7 +168,7 @@ body {
 }
 
 .footer {
-  background-color: var(var(--color-secundary));
+  background-color: var(--color-tertiary);
   color: var(--color-primary);
   padding: 3em;
   border-radius: 10px 10px 0 0;
