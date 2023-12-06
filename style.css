@@ -127,6 +127,32 @@ body {
   background-color: #000;
 }
 
+.title-pix {
+  color: #fff;
+  font-size: 2.5em;
+  flex-wrap: wrap;
+}
+
+.destaque {
+  text-transform: uppercase;
+}
+
+.qrCodePix {
+  width: 20em;
+  height: 20em;
+}
+
+.chavePix {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-top: .3em;
+  color: #ffff;
+}
+
+.chavePix::before {
+  content: "Chave pix: ";
+}
+
 .footer {
   background-color: #0B1995;
   color: #fff;
@@ -171,18 +197,6 @@ body {
   .main_list_socialMedia a,
   .main_list_socialMedia p {
     font-size: 2.5em;
-  }
-
-  .qrCodePix {
-    margin-top: 4em;
-    width: 20em;
-    height: 20em;
-  }
-
-  .chavePix {
-    font-size: 1.5em;
-    margin-top: .4em;
-    text-transform: uppercase;
   }
 }
 
