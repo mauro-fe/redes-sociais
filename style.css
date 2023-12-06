@@ -68,7 +68,7 @@ body {
   font-size: 4em;
   line-height: 1;
   filter: drop-shadow(2px 2px 1px var(--color-secundary));
-  border-bottom: 2px solidvar(var(--color-secundary));
+  border-bottom: 2px solid var(--color-secundary);
   margin-bottom: 0em;
 }
 
@@ -139,7 +139,7 @@ body {
   flex-wrap: wrap;
 }
 
-.title-pix .destaque {
+.title-pix_destaque {
   text-transform: uppercase;
 }
 
@@ -156,8 +156,12 @@ body {
 }
 
 .title-pix::selection,
-.chavePix::selection {
-  background-color: var(--color-tertiary);
+.title-pix_destaque::selection,
+.chavePix::selection,
+.footer-title::selection,
+.main_socialMedia-name::selection {
+  background-color: var(--color-primary);
+  color: #000;
 }
 
 .chavePix::before {
