@@ -15,28 +15,27 @@ html {
 }
 
 body {
-  min-height: 100vh;
   background-image: linear-gradient(to right bottom, #0798F2, #07C7F2);
-
 }
 
 .maxWidth {
-  max-width: 100em;
+  max-width: 70rem;
   margin: 0 auto;
-  text-align: center;
-  padding-bottom: 10em;
+  padding-bottom: 5em;
 }
 
-.main_socialMedia {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.main {
+  text-align: center;
 }
 
 .main_socialMedia-header {
   margin: 0;
   padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header_foto-perfil-input {
@@ -57,6 +56,7 @@ body {
   position: relative;
   z-index: 1;
   margin-top: 1em;
+
 }
 
 .header_foto-perfil-input:checked+label>.header_foto-perfil {
@@ -69,7 +69,8 @@ body {
   font-size: 4em;
   line-height: 1;
   filter: drop-shadow(2px 2px 1px #000);
-  border-bottom: 4px solid #224bbc;
+  border-bottom: 2px solid #0B1995;
+  margin-bottom: 0em;
 }
 
 .main_socialMedia-title::after {
@@ -80,8 +81,7 @@ body {
   text-shadow: 3px 3px 5px #000;
   padding: .4em .5em;
   color: #e7ffff;
-  font-size: 2.3em;
-  margin-top: .5em;
+  font-size: 2em;
 }
 
 .main_list_socialMedia {
@@ -89,6 +89,7 @@ body {
   padding: 0;
   width: 100%;
   margin-bottom: 0;
+  flex: 1 2 auto;
 }
 
 .main_list_socialMedia li {
@@ -106,8 +107,8 @@ body {
   text-decoration: none;
   background-image: linear-gradient(to right, #0B1995 10%, #0047BB 50%, #0B1995 95%);
   border-radius: 50px;
-  font-size: 3em;
-  letter-spacing: 5px;
+  font-size: 2.5em;
+  letter-spacing: 6px;
   font-weight: 400;
   color: #fff;
   filter: drop-shadow(0px 15px 5px #0B2C4D);
@@ -125,6 +126,16 @@ body {
 
 .main_list_socialMedia p::selection {
   background-color: #000;
+}
+
+.teste {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  padding: 0 2em;
+  margin-bottom: 5em;
 }
 
 .title-pix {
