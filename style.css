@@ -127,14 +127,10 @@ body {
   background-color: var(--color-secundary);
 }
 
-.teste {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.section-pix {
   background-color: var(--color-secundary);
-  padding: 0 2em;
-  margin-bottom: 5em;
+  padding: 1em 0;
+  margin: 6em 0 3em 0;
 }
 
 .title-pix {
