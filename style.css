@@ -139,7 +139,7 @@ body {
   flex-wrap: wrap;
 }
 
-.destaque {
+.title-pix .destaque {
   text-transform: uppercase;
 }
 
@@ -155,8 +155,9 @@ body {
   color: var(--color-primary);
 }
 
+.title-pix::selection,
 .chavePix::selection {
-  background-color: var(--color-secundary);
+  background-color: var(--color-tertiary);
 }
 
 .chavePix::before {
