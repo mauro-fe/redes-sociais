@@ -149,6 +149,10 @@ body {
   color: #ffff;
 }
 
+.chavePix::selection {
+  background-color: #000;
+}
+
 .chavePix::before {
   content: "Chave pix: ";
 }
