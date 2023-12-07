@@ -2,7 +2,6 @@
 
 :root {
   --font-primary: 'Roboto Condensed', sans-serif;
-  --background-body: #63d3ff;
   --color-primary: #e7ffff;
   --color-secundary: #000;
   --color-tertiary: #0B1995;
@@ -190,7 +189,6 @@ body {
 
 @media screen and (max-width: 70.25em) {
 
-
   .header_foto-perfil {
     transition: transform 1s, margin-top 1s;
   }
@@ -201,7 +199,7 @@ body {
   }
 
   .main_socialMedia-name {
-    margin: .5em 0 .8em 0;
+    margin-top: .5em;
   }
 
   .main_list_socialMedia {
