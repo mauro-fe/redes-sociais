@@ -137,6 +137,10 @@ body {
   border-radius: 20px;
 }
 
+.section-pix img {
+  cursor: not-allowed;
+}
+
 .title-pix {
   color: var(--color-primary);
   font-size: 2.5em;
