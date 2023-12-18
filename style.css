@@ -95,7 +95,7 @@ body {
 }
 
 .main_list_socialMedia span::after {
-  content: " Discord: ";
+  content: "Discord: ";
 }
 
 .main_list_socialMedia a,
@@ -122,6 +122,10 @@ body {
   animation: mexer 1s ease-in-out infinite alternate;
 }
 
+.main_list_socialMedia i {
+  margin-right: .3em;
+}
+
 .main_list_socialMedia p::selection {
   background-color: var(--color-secundary);
 }
@@ -130,6 +134,7 @@ body {
   background-color: var(--color-secundary);
   padding: 1em 0;
   margin: 6em 0 3em 0;
+  border-radius: 20px;
 }
 
 .title-pix {
