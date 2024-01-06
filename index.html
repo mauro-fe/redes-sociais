@@ -83,8 +83,14 @@
   </footer>
 
   <script>
-    var name = prompt("Diga seu nome");
-    alert("Bem vindo " + name)
+
+    name = prompt('Digite seu nome ')
+
+    if (name) {
+      alert('bem vindo ' + name);
+    } else {
+      alert('bem vindo visitante');
+    }
   </script>
 </body>
 
