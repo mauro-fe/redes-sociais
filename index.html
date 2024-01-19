@@ -86,14 +86,22 @@
   </footer>
 
   <script class="testando">
-    name = prompt('Digite seu nome ')
 
-    if (name) {
+    var name = prompt('Digite seu nome ');
 
-      document.querySelector(".main_socialMedia-visitante").innerHTML = 'bem vindo ' + name;
-    } else {
-      document.querySelector(".main_socialMedia-visitante").innerHTML = 'bem vindo visitante';
+    escreve(name);
+
+    function escreve() {
+      if (name) {
+        var output = document.querySelector(".main_socialMedia-visitante");
+        output.innerHTML = 'Bem vindo ' + name;
+      } else {
+        var output = document.querySelector(".main_socialMedia-visitante");
+        output.innerHTML = 'Bem vindo visitante';
+      }
     }
+
+
   </script>
 </body>
 
