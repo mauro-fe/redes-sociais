@@ -63,12 +63,25 @@ body {
 }
 
 .main_socialMedia-name {
-  color: var(--color-secundary);
   font-size: 4em;
-  line-height: 1;
+  color: var(--color-secundary);
   filter: drop-shadow(2px 2px 1px var(--color-secundary));
+  line-height: 1;
   border-bottom: 2px solid var(--color-secundary);
-  margin-bottom: 0em;
+}
+
+.main_socialMedia-visitante {
+  font-size: 2.5em;
+  margin-bottom: 0;
+  color: #e7ffff;
+  border: 5px solid rgba(0, 0, 0);
+  border-radius: 10px;
+  line-height: 1.5;
+  padding: 0 .5em;
+}
+
+.main_socialMedia-visitante::first-letter {
+  text-transform: uppercase;
 }
 
 .main_socialMedia-title::after {

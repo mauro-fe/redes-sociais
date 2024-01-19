@@ -21,7 +21,10 @@
         <img src="img/foto-perfil.jpg" alt="" class="header_foto-perfil">
       </label>
       <h1 class="main_socialMedia-name">Mauro Felix</h1>
+      <p class="main_socialMedia-visitante"></p>
     </header>
+
+
   </div>
 
   <div class="maxWidth">
@@ -82,14 +85,14 @@
     <h3 class="footer-title">Desenvolvido por Mauro Felix</h3>
   </footer>
 
-  <script>
-
+  <script class="testando">
     name = prompt('Digite seu nome ')
 
     if (name) {
-      alert('bem vindo ' + name);
+
+      document.querySelector(".main_socialMedia-visitante").innerHTML = 'bem vindo ' + name;
     } else {
-      alert('bem vindo visitante');
+      document.querySelector(".main_socialMedia-visitante").innerHTML = 'bem vindo visitante';
     }
   </script>
 </body>
