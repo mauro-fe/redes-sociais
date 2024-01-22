@@ -92,7 +92,8 @@
     escreve(name);
 
     function escreve() {
-      if (name) {
+
+      if (name !== String) {
         var output = document.querySelector(".main_socialMedia-visitante");
         output.innerHTML = 'Bem vindo ' + name;
       } else {

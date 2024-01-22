@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to right bottom, #0798F2, #07C7F2);
+  background-color: #000;
 }
 
 .maxWidth {
@@ -93,6 +93,7 @@ body {
   padding: .4em .5em;
   color: var(--color-primary);
   font-size: 2em;
+  cursor: not-allowed;
 }
 
 .main_list_socialMedia {
@@ -188,6 +189,7 @@ body {
 
 .chavePix::before {
   content: "Chave pix: ";
+  cursor: not-allowed;
 }
 
 .footer {
